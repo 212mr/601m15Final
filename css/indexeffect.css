@@ -1,0 +1,106 @@
+html {
+    /*background: rgba(41, 41, 91, 0.99);*/
+}
+
+body {
+    /*background-image: url("../image/WechatIMG8.jpeg");*/
+    /*background-size: cover;*/
+    height: 100%;
+    position: relative;
+}
+
+/*nightNY.jpg*/
+
+canvas {
+    display:block;
+    padding:4%;
+    margin:auto;
+    /*background: #e235d3;*/
+    font-size: 50px;
+    opacity: 1.0;
+    width: 50%;
+}
+
+div#movingbones {
+    margin-top:7%;
+}
+
+#big {
+    min-height:100%;
+    position:relative;
+}
+
+
+.footer {
+    position:fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    clear: both;
+    padding: 20px;
+    margin: 0 auto;
+    /*height: 50px;*/
+    width: 100%;
+}
+
+.heart-rate {
+    /*background-color:red;*/
+    width: 1200px;
+    height: 150px;
+    position: relative;
+    margin: 200px auto 0;
+}
+
+svg{
+    margin-right: -40px;
+}
+
+.fade-in {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    top: 0;
+    right: 0;
+    animation: heartRateIn 5s linear infinite;
+}
+
+.fade-out {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 5s linear infinite;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes heartRateIn {
+    0% {
+        width: 100%;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes heartRateOut {
+    0% {
+        left: -120%;
+    }
+    30% {
+        left: -120%;
+    }
+    100% {
+        left: 0;
+    }
+}

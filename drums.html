@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Drum</title>
+    <link rel="icon" type="image/gif" href="image/music3zmr.png"/>
+    <link type="text/css" rel="stylesheet" href="css/indexcss.css"/>
+    <link type="text/css" rel="stylesheet" href="css/menucss.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Codystar|Diplomata+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script src="audiojs/jquery.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/jquery.tabSlideOut.v1.3.js"></script>
+    <script src="audiojs/audio.min.js"></script>
+    <script src="js/menuJS.js"></script>
+</head>
+
+<body>
+
+
+<nav class="top-right">
+    <a class="disc l1" href="drums.html">
+        <div>Drum</div>
+    </a>
+    <a class="disc l2" href="lute.html">
+        <div>Lute</div>
+    </a>
+    <a class="disc l3" href="info.html">
+        <div>Culture</div>
+    </a>
+    <a class="disc l4" href="index2.html">
+        <div>Home</div>
+    </a>
+    <a class="disc l5 toggle">
+        Menu
+    </a>
+</nav>
+
+
+
+
+<div class="headline">
+    <p> Drums</p>
+</div>
+
+<div class="inline">
+    <div align="center">
+        <div class="slide-out-div">
+            <a class="handle" href="http://link-for-non-js-users">Content</a>
+            <div class="playaudio">
+                <audio preload></audio>
+                <ol>
+                    <li><a href="#" data-src="music/Harry Potter Theme Song.mp3">Harry Potter</a></li>
+                    <li><a href="#" data-src="music/Pirates Of The Caribbean Theme Song.mp3">Pirates of The
+                        Caribbean</a></li>
+                    <li><a href="#" data-src="music/GameOfThrone01.mp3">Game of Thrones</a></li>
+                    <li><a href="#" data-src="music/twilight01.mp3">Twilight</a></li>
+                    <li><a href="#" data-src="music/vivaLavida.mp3">Viva La Vida</a></li>
+                    <li><a href="#" data-src="music/Epic Soundtrack Music (instrumental) - 1 Minute Originals.mp3">Epic
+                        Lights</a></li>
+                    <li><a href="#" data-src="music/Movie Trailer.mp3">Epic Movie Trailer</a></li>
+                    <li><a href="#" data-src="music/1music.mp3">Warm And Cozy</a></li>
+                </ol>
+                <br>
+                <hr>
+                <div class="keyboard">
+                    <h1>Keyboard shortcuts:</h1>
+                    <br>
+                    <div align="left" style="margin-left:100px;">
+                        <p>
+                            <button class="key">&rarr;</button>
+                            Next track
+                        </p>
+                        <p>
+                            <button class="key">&larr;</button>
+                            Previous track
+                        </p>
+                        <p>
+                            <button class="key">Space_Bar</button>
+                            Play/pause
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div align="center">
+    <img id="Adrumimage" onclick="play('music/drum1.mp3')" src="image/00drum1-01.png">
+    <img id="Bdrumimage" onclick="play('music/drum3.mp3')" src="image/00drum2-01.png">
+    <br>
+    <img id="Cdrumimage" onclick="play('music/drum4.mp3')" src="image/00drum3-01.png">
+    <img id="Ddrumimage" onclick="play('music/drum5.mp3')" src="image/00drum4-01.png">
+</div>
+
+
+</body>
+</html>
